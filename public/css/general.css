@@ -1,0 +1,31 @@
+:root{
+    --colorAmarillo : #EAC926;
+    --colorAzul : #03264C;
+    --colorCeleste : #1259c3;
+    --colorGrisOscuro : #666;
+    --colorGrisClaro : #ebebeb;
+    --colorVerde : #39b54a;
+    --tipografiaGeneral : 'Roboto';
+    --sizeCuerpo : 12px;
+    --sizeTitulares : 24px;
+    --sizePrecios : 18px;
+    --sizeDescuentos : 16px;
+    --sizeDescripciones : 16px;
+}
+
+body {
+    font-family: var(--tipografiaGeneral);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    background-color: var(--colorAmarillo);
+}
