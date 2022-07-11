@@ -13,6 +13,11 @@
     --sizeDescripciones : 16px;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body {
     font-family: var(--tipografiaGeneral);
 }
@@ -26,6 +31,14 @@ li {
     list-style: none;
 }
 
+ol, ul {
+    padding: 0;
+}
+
 header {
     background-color: var(--colorAmarillo);
+}
+
+main {
+    background-color: var(--colorGrisClaro);
 }
