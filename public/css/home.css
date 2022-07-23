@@ -4,13 +4,25 @@
     padding: 25px 0 0;
 }
 
-.home__header__logo {
-    width: 40%;
-    margin: 0 0 10px 25px;
+.home__header__parte-superior {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    align-items: center;
 }
 
-.home__header__buscador {
-    margin: 0 0 10px 15px;
+.home__header__logo, .home__header__buscador {
+    width: 50%;
+    
+}
+
+.home__header__buscador button {
+    padding: 3px;
+}
+
+.home__header__buscador input {
+    width: 80%;
+    padding: 5px 0;
 }
 
 .home__header__cuotas {
@@ -30,7 +42,7 @@
     padding-bottom: 10px
 }
 
-.home__header__burger--menu button{
+.home__header__burger--menu button {
     color: #fff;
     background-color: var(--colorCeleste);
     width: 40px;
@@ -51,6 +63,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: auto;
+    width: 90%;
 }
 
 h3 {
@@ -67,11 +81,29 @@ h3 {
     width: 300px;
 }
 
+.home__main__section__article img {
+    width: 100%;
+}
+
 .home__main__section__article--info {
     width: 100%;
     padding: 15px;
-    border-top: 1px solid #ebebeb;
+    border-top: 1px solid var(--colorGrisClaro);
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: baseline;
 }
+
+/* {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+} */
 
 .home__main__section__article--info i {
     display: block;
@@ -80,14 +112,24 @@ h3 {
     width: 30px;
     height: 30px;
     border: 1px solid var(--colorVerde);
+    background-color: #fff;
     border-radius: 50%;
     padding: 5px;
-    
+    position: absolute;
+    right: 20px;
+    top: -15px;
+
+}
+
+.home__main__section--precio {
+    font-size: 18px;
+    width: 30%;
 }
 
 .home__main__section--descuento {
     color: var(--colorVerde);
     font-weight: normal;
+    width: 70%;
 }
 
 .home__main__section--descripcion {
@@ -98,65 +140,41 @@ h3 {
 
 @media (min-width: 768px) {
 
+    /* HEADER */
+
+    .home__header__logo, .home__header__buscador, .home__header__cuotas {
+        width: 33%;
+    }
+
+    /* MAIN */
+
     .home__main__section--ultima-visita article,
-.home__main__section--ofertas article {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}
+    .home__main__section--ofertas article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 45%;
+    }
 
-.home__main__section--descripcion {
-    display: inline-block;
-}
+    .home__main__section--productos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 
-.home__header__nav {
-    display: inline-block;
-}
+    .home__main__section--descripcion {
+        display: inline-block;
+    }
 
-.home__header__burger--menu {
-    display: none;
-}
+    .home__header__nav {
+        display: inline-block;
+    }
+
+    .home__header__burger--menu {
+        display: none;
+    }
 
 }
-/*
-.home__main {
-    margin: 0 auto;
-    width: 90%;
-}
-
-.home__main__section__article {
-    background-color: #fff;    
-    margin: 10px 0px;
-}
-
-.home__main__section__article img {
-    width: 100%;
-}
-
-
-
-.home__main__section__article--info {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    border-top: 1px solid #ebebeb;
-    position: relative;
-    padding: 15px;
-}
-
-.home__main__section__article--info i {
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-}
-*/
 
 
 .home__main__section--precio {
@@ -188,4 +206,17 @@ h3 {
 .home__footer__section--copyright {
     padding-left: 15px;
     margin-top: 40px;
+}
+
+@media (min-width: 1024px) {
+    .home__main__section--ultima-visita article,
+    .home__main__section--ofertas article {
+        width: 22%;
+    }
+
+    .home__main__section--precio,
+    .home__main__section--descuento {
+        width: 50%;
+    }
+
 }
