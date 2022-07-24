@@ -95,16 +95,6 @@ h3 {
     align-items: baseline;
 }
 
-/* {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    border-top: 1px solid #ebebeb;
-    position: relative;
-    padding: 15px;
-} */
-
 .home__main__section__article--info i {
     display: block;
     font-size: 16px;
@@ -137,6 +127,39 @@ h3 {
     color: var(--colorGrisOscuro);
     font-weight: normal;
 }
+
+
+.home__main__section--precio {
+    font-size: var(--sizePrecios);
+}
+
+.home__main__section--descuento {
+    font-size: var(--sizeDescuentos);
+}
+
+
+/* FOOTER */
+
+.home__footer__section {
+    margin: 0 0 20px;
+}
+
+.home__footer__section__article {
+    margin: 50px 35px 0;
+    text-align: center;
+}
+
+.home__footer__section__article--icon {
+    color: var(--colorCeleste);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.home__footer__section--copyright {
+    padding-left: 15px;
+    margin-top: 40px;
+}
+
 
 @media (min-width: 768px) {
 
@@ -183,37 +206,6 @@ h3 {
 
 }
 
-
-.home__main__section--precio {
-    font-size: var(--sizePrecios);
-}
-
-.home__main__section--descuento {
-    font-size: var(--sizeDescuentos);
-}
-
-
-/* FOOTER */
-
-.home__footer__section {
-    margin: 0 0 20px;
-}
-
-.home__footer__section__article {
-    margin: 50px 35px 0;
-    text-align: center;
-}
-
-.home__footer__section__article--icon {
-    color: var(--colorCeleste);
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.home__footer__section--copyright {
-    padding-left: 15px;
-    margin-top: 40px;
-}
 
 @media (min-width: 1024px) {
     .home__main__section--ultima-visita article,
